@@ -1,0 +1,22 @@
+.doughnutchart {
+    &__container {
+        // width: 12rem;
+        // height: 12rem;
+        // padding-bottom: 5rem;
+        // margin: 1rem 0;
+        position: relative;
+    }
+
+    &__label {
+        margin: 0 0 .5rem 0;
+        font-weight: bold;
+    }
+
+    &__loader {
+        position: absolute;
+        z-index: 2;
+        opacity: .5;
+        top: 40%;
+        right: 40%;
+    }
+}

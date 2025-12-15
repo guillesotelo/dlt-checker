@@ -1,0 +1,148 @@
+@import '../../scss/animations';
+
+.container {
+  margin: 1rem auto 0;
+  padding: 0 20px;
+  font-family: Inter, Arial, sans-serif;
+  text-align: center;
+  min-height: 98vh;
+}
+
+.intro {
+  font-size: 1.05rem;
+  margin: 0 auto 2rem;
+  width: 30vw;
+  color: #8d8d8d;
+}
+
+.dropzone {
+  border: 2px dashed #444;
+  padding: 10rem;
+  border-radius: 1rem;
+  margin: 3rem 0 0;
+  background: #fafafa0a;
+  cursor: pointer;
+  transition: .1s;
+
+  &:hover {
+    border-color: #c4c4c4;
+    color: #fff;
+  }
+
+  position: relative;
+  color: #cdcdcd;
+  font-size: 1rem;
+}
+
+.fileInput {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 1rem;
+}
+
+.btn {
+  background: #003483;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.1s ease;
+
+  &:disabled {
+    background: #a0a0a0;
+    opacity: .5;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    background: #003f9e;
+  }
+}
+
+.downloadBtn {
+  background: #00836f;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.1s ease;
+
+  &:disabled {
+    background: #a0a0a0;
+    opacity: .5;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    background: #019881;
+  }
+}
+
+.error {
+  margin-top: 20px;
+  color: #d80000;
+  font-weight: 600;
+}
+
+.resultCard {
+  margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.loader {
+  margin: auto;
+  opacity: 0;
+  animation: fade-in 2s forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.loaderRow {
+  margin: auto;
+  opacity: 0;
+  animation: fade-in 2s forwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // width: 90vw;
+  gap: 2rem;
+}
+
+.loaderCol {
+  height: 75vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  font-size: .8rem;
+  position: absolute;
+  bottom: 1rem;
+  margin: 0 auto;
+  place-self: center;
+}

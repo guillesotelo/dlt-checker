@@ -1,0 +1,146 @@
+body {
+    font-family: Arial;
+    overflow-y: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.entry {
+    margin: .5rem 0;
+    width: -webkit-fill-available;
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    word-wrap: break-word;
+}
+
+.entry-finding-sev-high {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.entry-finding-sev-medium {
+    color: #f0ad4e;
+    font-weight: bold;
+}
+
+.entry-finding-sev-low {
+    color: #5bc0de;
+    font-weight: bold;
+}
+
+.sev-high {
+    background-color: #ffcccc;
+}
+
+.sev-medium {
+    background-color: #fff0b3;
+}
+
+.sev-low {
+    background-color: #e6f7ff;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+pre:last-child {
+    margin-bottom: 0;
+}
+
+.summary-container {
+    max-width: 800px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.summary {
+    height: 80vh;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.summary.good {
+    background-color: #d4edda;
+    border: 1px solid #7bc47f;
+}
+
+.summary.bad {
+    background-color: #f8d7da;
+    border: 1px solid #d9534f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    word-break: break-all;
+}
+
+th {
+    background: #f0f0f0;
+}
+
+.entries-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.entries-filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.entries-list {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 80vh;
+    margin: auto;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sev-label-high {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.sev-label-medium {
+    color: #f0ad4e;
+    font-weight: bold;
+}
+
+.sev-label-low {
+    color: #5bc0de;
+    font-weight: bold;
+}
+
+/* Filters */
+#entityDropdown,
+#entityDropdown:focus {
+    border: none;
+    background: rgb(197, 197, 255);
+    cursor: pointer;
+    border-radius: .5rem;
+}
