@@ -1,12 +1,10 @@
-from pydlt import DltFileReader, DltFileWriter
+from pydlt import DltFileReader
 import json
 import re
 import logging
 from copy import deepcopy
-import pickle
+import argparse
 
-input_file = "input/DLT_DIR.dlt"
-output_file = "input/DLT_DIR.json"
 
 def clean_text(text):
     """
@@ -104,4 +102,8 @@ def parse_original_logs(input_file, output_file):
 
 
 if __name__ == '__main__':
-    parse_logs(input_file, output_file)
+    parser = argparse.ArgumentParser(description="Parse DLT to JSON")
+    parser.add_argument("--input", required=True, help="Input DLT file")
+    parser.add_argument("--output", default='output.json', help="Output JSON file")
+    args = parser.parse_args()
+    parse_logs(args.input, args.output)

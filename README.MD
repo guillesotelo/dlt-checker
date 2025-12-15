@@ -40,32 +40,26 @@ In order to analyse raw DLT logs, we need to parse them into JSON:
 1. Install dependencies
 
 ```bash
-    pip install json pydlt re
+    pip install json pydlt re tqdm multiprocessing
 ```
 
-2. Convert DLT to JSON (update input & output paths, if needed)
+2. Convert DLT file to JSON for processing
 
 ```bash
-    python convert_dlt_to_json.py
+    python convert_dlt_to_json.py --input path/to/logs.dlt
 ```
 
 ### Run
 
-1. Install dependencies
-
-```bash
-    pip install re tqdm multiprocessing
-```
-
-2. Run the GDPR scan
+1. Run the GDPR scan
 
 ```bash
     python gdpr_scan_regex.py --input input/dlt_logs.json --output output/flagged.json
 ```
 
-3. Open the HTML report
+2. Open the HTML report
 
 It contains:
 
 - Summary with compliance flags
-- Findings with highlighted severity (red/yellow/blue)
+- Findings with highlighted severity (red/yellow/blue) direct and combined
