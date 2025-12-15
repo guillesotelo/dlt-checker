@@ -1,4 +1,4 @@
-# GDPR Compliance Analyser for DLT Logs (Automotive)
+# GDPR Compliance Analyzer for DLT Logs (Automotive)
 
 Analyzer of DLT (Diagnostic Log and Trace) logs using custom regex checkers.
 
