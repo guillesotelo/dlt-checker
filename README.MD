@@ -54,7 +54,7 @@ In order to analyse raw DLT logs, we need to parse them into JSON:
 1. Run the GDPR scan
 
 ```bash
-    python gdpr_scan_regex.py --input input/dlt_logs.json --output output/flagged.json
+    python gdpr_scan_regex.py --input input/logs.json --output output/flagged.json
 ```
 
 2. Open the HTML report
