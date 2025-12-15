@@ -1,7 +1,6 @@
 # GDPR Compliance Analyser for DLT Logs (Automotive)
 
-Analyser of DLT logs using custom analysers and JSON as input.
-
+Analyzer of DLT (Diagnostic Log and Trace) logs using custom regex checkers.
 
 ## Features
 
