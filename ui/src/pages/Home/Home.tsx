@@ -263,8 +263,8 @@ export default function Home() {
 
       {!uploadLoading && !analyzeLoading && result ?
         <div className="analyzer-container">
-          <div className="summary-container">
-            <div className={`summary ${result.summaryClass}`}>
+          <div className={`summary-container${result.summaryClass || ''}`}>
+            <div className='summary'>
               <h2 style={{ marginTop: 0 }}>GDPR Compliant: {result.gdprMessage}</h2>
               {getTotalMatches() ? <p className="summary-total">Total flagged logs: <strong>{getTotalMatches()}</strong></p> : ''}
               <table>
